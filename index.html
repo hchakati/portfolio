@@ -1,55 +1,84 @@
-<section id="home">
-    <header>
-      <h1>Hi, I'm Hari Priya Chakati</h1>
-      <p>Java Full Stack Developer</p>
-      <p><strong>Phone:</strong> (805) 953-5725 | <strong>Email:</strong> <a href="mailto:chakatiharipriya95@gmail.com">chakatiharipriya95@gmail.com</a></p>
-      <p><a href="https://www.linkedin.com/in/chakati/">LinkedIn Profile</a></p>
-    </header>
-  </section>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate Java Full Stack Developer with over 7 years of experience in creating enterprise-level applications. I specialize in both front-end and back-end development, working with Java, Spring, Microservices, React, and cloud technologies.</p>
-  </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Java, JavaScript, TypeScript, HTML5, CSS3</li>
-      <li><strong>Frameworks:</strong> Spring Boot, React, Angular, Node.js</li>
-      <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Oracle</li>
-      <li><strong>Cloud Technologies:</strong> AWS (EC2, Lambda, S3), Docker, Kubernetes</li>
-      <li><strong>Tools:</strong> Jenkins, Git, GitHub, Maven</li>
-    </ul>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1: Microservices Architecture</h3>
-      <p>Developed a cloud-native microservices application using Spring Boot and deployed on AWS. Integrated messaging services using Apache Kafka and built RESTful web services.</p>
-    </div>
-    <div class="project">
-      <h3>Project 2: E-Commerce Platform</h3>
-      <p>Built a scalable e-commerce platform with Java Spring and React for front-end. Implemented payment gateway integration and user authentication.</p>
-    </div>
-  </section>
-  <section id="resume">
-    <h2>Resume</h2>
-    <h3>Education</h3>
-    <p>Masters in Computer Science, California Lutheran University, 2022-2024</p>
-    <h3>Experience</h3>
-    <p><strong>Java Full Stack Developer</strong> - Intuitive Surgical (Mar 2024 - Present)</p>
-    <p><strong>Java Full Stack Developer</strong> - Stripe, Inc. (Dec 2022 - Feb 2024)</p>
-    <p><strong>Java Full Stack Developer</strong> - Wipro Technologies (Mar 2019 - Mar 2022)</p>
-  </section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" required></textarea><br><br>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hari Priya Chakati</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Hello! I'm Hari Priya Chakati, a Java Full Stack Developer with 7+ years of experience. I specialize in creating scalable web applications and microservices using Java, Spring, AWS, and modern JavaScript frameworks.</p>
+            <p>I'm passionate about developing software solutions that provide real-world value and continuously improving my technical skills.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h1>Skills</h1>
+            <div class="skill-bar">
+                <div class="skill">
+                    <h3>Java</h3>
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+                <div class="skill">
+                    <h3>React</h3>
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="skill">
+                    <h3>AWS</h3>
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+                <div class="skill">
+                    <h3>Spring Boot</h3>
+                    <div class="progress-bar" style="width: 88%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="project">
+                <h3>Intuitive Surgical</h3>
+                <p>Developed cloud-native microservices using Spring Boot and AWS Lambda, enhancing scalability and reducing costs.</p>
+            </div>
+            <div class="project">
+                <h3>Stripe, Inc.</h3>
+                <p>Worked on building CI/CD pipelines and developing microservices to ensure high availability in financial services.</p>
+            </div>
+            <div class="project">
+                <h3>Wipro Technologies</h3>
+                <p>Led development of RESTful APIs and microservices for search engine technology and online advertising projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Email: <a href="mailto:chakatiharipriya95@gmail.com">chakatiharipriya95@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/chakati/" target="_blank">linkedin.com/in/chakati</a></p>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hari Priya Chakati - Full Stack Java Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hari Priya Chakati - Full Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-container">
-            <h1>H</h1><h1>a</h1><h1>r</h1><h1>i</h1><h1> </h1><h1>P</h1><h1>r</h1><h1>i</h1><h1>y</h1><h1>a</h1><h1> </h1><h1>C</h1><h1>h</h1><h1>a</h1><h1>k</h1><h1>a</h1><h1>t</h1><h1>i</h1>
-            <p class="subtitle">Full Stack Java Developer | Cloud Architect | Problem Solver</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
-    </header>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navigation -->
+  <header class="bg-gray-800 text-white py-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">Hari Priya</a>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-500">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p>I am Hari Priya Chakati, a Full Stack Developer with 7+ years of vibrant experience in building scalable web applications and microservices. I specialize in backend development using Java and AWS, and frontend development with React, ensuring the delivery of efficient and high-quality software.</p>
-            <p>I have hands-on experience in building RESTful APIs, deploying cloud-native applications, and integrating advanced technologies such as Spring Boot, AWS, and modern JavaScript frameworks.</p>
-            <p>My passion for software development drives me to continuously improve my skills and stay updated with the latest trends in the tech world. Let’s create something amazing together!</p>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="bg-white py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-lg max-w-3xl mx-auto">I'm Hari Priya Chakati, a Full Stack Developer with over 7 years of experience in building scalable and efficient software solutions. I specialize in Java, AWS, React, and Spring Boot. My passion lies in creating innovative applications that solve real-world problems.</p>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <ul class="skills-list">
-                <li>Java, Spring Boot, AWS, React, Node.js</li>
-                <li>Cloud Deployment (AWS EC2, Lambda, S3, CloudWatch)</li>
-                <li>Microservices, RESTful APIs, Docker, Kubernetes</li>
-                <li>CI/CD, Jenkins, Git, Terraform, Maven</li>
-                <li>Relational & NoSQL Databases (MySQL, PostgreSQL, MongoDB)</li>
-            </ul>
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-200 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Java</h3>
+          <p class="mt-2">Java 8+, Spring Boot, AWS, Microservices</p>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project">
-                <h3>Intuitive Surgical - Cloud-native Microservices</h3>
-                <p>Developed cloud-native microservices using Spring Boot and AWS Lambda, enhancing scalability and reducing costs. This project focused on optimizing system performance and fault tolerance while reducing operational costs.</p>
-                <a href="https://github.com/your-repo" class="project-link">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Stripe - CI/CD Pipeline Development</h3>
-                <p>Built CI/CD pipelines and developed microservices that ensured high availability and uptime in the financial services domain. The project improved deployment workflows and streamlined system integration.</p>
-                <a href="https://github.com/your-repo" class="project-link">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Wipro Technologies - RESTful APIs for Search Engines</h3>
-                <p>Led the development of RESTful APIs and microservices for search engine technology and online advertising. This project improved system scalability and enabled better content indexing and targeted advertising.</p>
-                <a href="https://github.com/your-repo" class="project-link">View Project</a>
-            </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">React</h3>
+          <p class="mt-2">React, Redux, Frontend Development</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <form action="mailto:chakatiharipriya95@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-            <p>Or connect with me on <a href="https://www.linkedin.com/in/chakati/" target="_blank">LinkedIn</a> or <a href="https://github.com/hchakati" target="_blank">GitHub</a>.</p>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">AWS</h3>
+          <p class="mt-2">AWS EC2, Lambda, S3, CloudWatch, CI/CD</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <script src="scripts.js"></script>
+  <!-- Projects Section -->
+  <section id="projects" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Intuitive Surgical</h3>
+          <p class="mt-2">Developed cloud-native microservices using Spring Boot and AWS Lambda, enhancing scalability and reducing costs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Stripe, Inc.</h3>
+          <p class="mt-2">Built CI/CD pipelines and developed microservices ensuring high availability for financial services.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Wipro Technologies</h3>
+          <p class="mt-2">Led development of RESTful APIs and microservices for search engine technology and online advertising projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-800 text-white py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+      <p class="text-lg">Feel free to reach out to me via email or LinkedIn!</p>
+      <p class="mt-4"><a href="mailto:chakatiharipriya95@gmail.com" class="text-blue-500 hover:text-blue-700">Email: chakatiharipriya95@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/chakati" class="text-blue-500 hover:text-blue-700">LinkedIn: linkedin.com/in/chakati</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Hari Priya Chakati. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
